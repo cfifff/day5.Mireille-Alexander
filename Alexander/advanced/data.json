@@ -1,0 +1,27 @@
+data = `[
+	{
+	"title": "Javascript for Dummies",
+   "author": "Dummy Dumb",
+   "read": "false"
+	},
+	{
+	"title": "JSON for Dummies",
+   "author": "Dummy Dumb",
+   "read": "false"
+	},
+	{
+	"title": "CSS for Dummies",
+   "author": "Dummy Dumb",
+   "read": "false"
+	},
+	{
+	"title": "HTML for Dummies",
+   "author": "Dummy Dumb",
+   "read": "false"
+	},
+	{
+	"title": "Git for Dummies",
+   "author": "Dummy Dumb",
+   "read": "false"
+	}
+]`;

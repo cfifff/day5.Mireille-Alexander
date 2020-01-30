@@ -1,0 +1,29 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+#container {
+	width: 90%;
+	margin: auto;
+	background-color: #114309;
+	color: #FBC317;
+}
+#heading {
+	text-align: center;
+	color: #F9E318;
+}
+#heading h1 {
+	padding: 30px;
+}
+#content > div {
+	display: flex;
+	padding: 10px 20px;
+}
+#content > div > img {
+	width: 300px;
+	height: auto;
+}
+#content > div > div {
+	padding: 0 15px;
+	font-size: 1.5em;
+}

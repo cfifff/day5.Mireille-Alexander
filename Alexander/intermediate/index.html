@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		table {
+			width: 90%;
+			margin: auto;
+		}
+		caption {
+			margin: 50px 0 15px 0;
+		}
+		table, th, td {
+  		border: 1px solid black;
+}
+	</style>
+</head>
+<body>
+	<table>
+		<caption>Employees</caption>
+		<thead>
+			<tr id="header">
+				<th>header</th>
+				<th>header</th>
+				<th>header</th>
+				<th>header</th>
+				<th>header</th>
+				<th>header</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr id="row1">
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+			</tr>
+			<tr id="row2">
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+			</tr>
+			<tr id="row3">
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+			</tr>
+			<tr id="row4">
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+			</tr>
+			<tr id="row5">
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+			</tr>
+			<tr id="row6">
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+			</tr>
+			<tr id="row7">
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+			</tr>
+			<tr id="row8">
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+			</tr>
+			<tr id="row9">
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+			</tr>
+			<tr id="row10">
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<script>
+		var employees = [
+			{
+			"unique_iD": "00000",
+			"first_name": "Adrian",
+			"last_name": "Adams",
+			"email_address": "adraian.adams@gmail.com",
+			"job_title": "actor",
+			"salary": "$1000"
+			},
+			{
+			"unique_iD": "11111",
+			"first_name": "Barbara",
+			"last_name": "Beatrice",
+			"email_address": "barbara.beatrice@gmail.com",
+			"job_title": "botanist",
+			"salary": "$1200"
+			},
+			{
+			"unique_iD": "22222",
+			"first_name": "Cade",
+			"last_name": "Caesar",
+			"email_address": "cade.caesar@gmail.com",
+			"job_title": "carpenter",
+			"salary": "$1300"
+			},
+			{
+			"unique_iD": "33333",
+			"first_name": "Daisy",
+			"last_name": "Danelle",
+			"email_address": "daisy.danelle@gmail.com",
+			"job_title": "designer",
+			"salary": "$1400"
+			},
+			{
+			"unique_iD": "44444",
+			"first_name": "Eadgar",
+			"last_name": "Earl",
+			"email_address": "eadgar.earl@gmail.com",
+			"job_title": "engineer",
+			"salary": "$1500"
+			},
+			{
+			"unique_iD": "55555",
+			"first_name": "Felicia",
+			"last_name": "Ferne",
+			"email_address": "felicia.ferne@gmail.com",
+			"job_title": "farmer",
+			"salary": "$1600"
+			},
+			{
+			"unique_iD": "66666",
+			"first_name": "Gabriel",
+			"last_name": "Gardner",
+			"email_address": "gabriel.gardner@gmail.com",
+			"job_title": "geologist",
+			"salary": "$1700"
+			},
+			{
+			"unique_iD": "77777",
+			"first_name": "Hannah",
+			"last_name": "Harley",
+			"email_address": "hannah.harley@gmail.com",
+			"job_title": "hairdresser",
+			"salary": "$1800"
+			},
+			{
+			"unique_iD": "88888",
+			"first_name": "Iver",
+			"last_name": "Irwin",
+			"email_address": "iver.irwin@gmail.com",
+			"job_title": "investor",
+			"salary": "$1900"
+			},
+			{
+			"unique_iD": "99999",
+			"first_name": "Jeanette",
+			"last_name": "Jessy",
+			"email_address": "jeanette.jessy@gmail.com",
+			"job_title": "jeweler",
+			"salary": "$2000"
+			}
+		];
+
+		var tbody = document.getElementsByTagName("tbody")[0];
+		for (i = 0; i < employees.length; i++) {
+			tbody.children[i].children[0].innerHTML = employees[i].unique_iD;
+			tbody.children[i].children[1].innerHTML = employees[i].first_name;
+			tbody.children[i].children[2].innerHTML = employees[i].last_name;
+			tbody.children[i].children[3].innerHTML = employees[i].email_address;
+			tbody.children[i].children[4].innerHTML = employees[i].job_title;
+			tbody.children[i].children[5].innerHTML = employees[i].salary;
+		};
+	</script>
+</body>
+</html>
